@@ -1,0 +1,152 @@
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared style */
+
+.display-flex{
+    display: flex;
+}
+/* dark-02 */
+.text-gray{
+    color: #424242;
+}
+
+/* dark-03 */
+.text-light-gray{
+    color: #727272;
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary{
+     background-color: #FF900E;
+     height: 64px;
+     width: 180px;
+     border-radius: 8px;
+     color: white;
+     font-size: 1.2rem;
+     font-weight: 600;
+   
+}
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+main>section{
+    margin-top: 130px;
+}
+/* nav related styles */
+.brand{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.navbar,.banner{
+    justify-content: space-between;
+    align-items: center;
+   
+    max-width: 1440px;
+      margin: 0px auto;
+}
+.nav-item{
+    list-style: none;
+    margin: 30px;
+} 
+.nav-link {
+    text-decoration: none;
+}
+
+/* banner related style */
+.banner-contant{
+    max-width: 850px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    
+    font-size: 1rem;
+}
+
+
+/* teams related styles */
+ .teams{
+    align-items: center;
+    gap: 73px;
+ }
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.our-features{
+    width: 537px;
+    height: 304px;
+}
+.feature-title{
+    font-size: 2.9rem;
+}
+#text-color-1{
+    color: #727272;
+}
+#text-color-2{
+    color: #424242;
+}
+#text-color-3{
+    color: #FF900E;
+}
+
+@media screen and (max-width :576px) {
+    .navbar,.nav-links{
+        flex-direction: column;
+    }
+    .banner-image{
+        width: 100%;
+    }
+
+    /* for teams */
+    .our-features{
+        width: 100%;
+        text-align: center;
+    }
+     
+    .teams{
+        flex-direction: column-reverse;
+    }
+
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .banner-image{
+        width: 100%;
+    }
+    .teams{
+        flex-direction: column-reverse;
+    }
+    .our-features{
+        width: 100%;
+        text-align: center;
+    }
+    .team-img-container{
+        width: 100%;
+    }
+    .team-img-container>img{
+        width: 100%;
+    }
+     
+}
