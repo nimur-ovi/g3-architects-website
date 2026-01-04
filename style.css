@@ -200,6 +200,15 @@ main>section{
     filter: grayscale(100%);
 }
 
+/* footer related styles */
+.copyright{
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    height: 100px;
+    margin: 130px auto ;
+}
+ 
 
 @media screen and (max-width :576px) {
     .navbar,.nav-links,.features{
@@ -210,8 +219,8 @@ main>section{
     }
     /* for features */
     #experience-badge{
-        margin-top: 100px;
-        margin-left: 100px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
     .feature-img-and-btn>img{
         width: 100%;
@@ -233,14 +242,20 @@ main>section{
     .section-title,.section-description{
         text-align: center;
     }
+    /* facts */
     .facts-container{
         justify-items: center;
         gap: 20px;
 
     }
+    /* sponsor */
     .sponsor-companies{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
+    }
+    /* footer */
+    .copyright>p{
+        text-align: center;
     }
 }
 
@@ -253,8 +268,8 @@ main>section{
         width: 100%;
     }
     #experience-badge{
-        margin-left: 100px;
-        margin-top: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
     .feature-img-and-btn>img{
         width: 100%;
